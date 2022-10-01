@@ -17,6 +17,8 @@
 import {Component, Ref, Vue} from 'vue-property-decorator'
 import HelloWorld from '@/components/HelloWorld.vue'
 import Rules from "@/service/tool/Rules"
+import {getModule} from "vuex-module-decorators";
+import SnackbarModule from "@/store/SnackbarModule";
 
 @Component({ components: { HelloWorld } })
 export default class Home extends Vue {
@@ -26,7 +28,8 @@ export default class Home extends Vue {
 	get rules() { return Rules }
 
 	validate() {
-		console.log(this.form.validate())
+		// console.log(this.form.validate())
+		getModule(SnackbarModule).makeToast("XDD")
 	}
 
 }
