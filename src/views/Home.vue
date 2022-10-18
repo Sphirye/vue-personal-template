@@ -17,8 +17,9 @@
 import {Component, Ref, Vue} from 'vue-property-decorator'
 import HelloWorld from '@/components/HelloWorld.vue'
 import Rules from "@/service/tool/Rules"
-import {getModule} from "vuex-module-decorators";
-import SnackbarModule from "@/store/SnackbarModule";
+import {getModule} from "vuex-module-decorators"
+import DialogModule from "@/store/DialogModule"
+import Dialog from "@/model/vue/Dialog"
 
 @Component({ components: { HelloWorld } })
 export default class Home extends Vue {
@@ -29,7 +30,9 @@ export default class Home extends Vue {
 
 	validate() {
 		// console.log(this.form.validate())
-		getModule(SnackbarModule).makeToast("XDD")
+		getModule(DialogModule).showDialog(new Dialog("Aviso", "¿Desea continuar?", () => {
+			alert("XDDD")
+		}))
 	}
 
 }

@@ -5,4 +5,8 @@ export default {
     invalidField: "Campo inválido.",
     invalidEmail: "Email inválido.",
 
+    // User interface
+    accept: "Aceptar",
+    cancel: "Cancelar"
+
 }
