@@ -13,11 +13,9 @@
 </template>
 
 <script lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
 import { Component, Vue } from "vue-property-decorator"
-import {getModule} from "vuex-module-decorators";
-import LangModule from "@/store/LangModule";
-import SnackbarComponent from "@/components/SnackbarComponent.vue";
+import {getModule} from "vuex-module-decorators"
+import LangModule from "@/store/LangModule"
 
 @Component
 export default class HeaderComponent extends Vue {

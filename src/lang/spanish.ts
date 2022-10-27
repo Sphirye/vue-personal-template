@@ -7,6 +7,10 @@ export default {
 
     // User interface
     accept: "Aceptar",
-    cancel: "Cancelar"
+    cancel: "Cancelar",
+    warning: "Aviso",
+    delete: "Eliminar",
+    create: "Crear",
+    save: "Guardar",
 
 }
