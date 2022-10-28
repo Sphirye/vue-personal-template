@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import vuetify from './config/vuetify'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
+import "@/config/custom-styles.css"
 import AxiosConfig from "@/config/AxiosConfig"
 import '@mdi/font/css/materialdesignicons.css'
 import LangModule from "@/store/LangModule"

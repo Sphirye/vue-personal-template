@@ -4,18 +4,13 @@
 			<v-card-title class="headline">
 				<v-row class="py-1 grey lighten-3" align="center" no-gutters>
 					<h5 class="mx-auto grey--text text--darken-2 font-weight-medium align-self-center">{{dialogModule.title}}</h5>
-					<v-btn icon>
-						<v-icon>
-							mdi-close
-						</v-icon>
-					</v-btn>
 				</v-row>
 			</v-card-title>
-			<v-card-text style="font-size: 17px;" class="my-2">{{dialogModule.body}}</v-card-text>
+			<v-card-text style="font-size: 17px;" class="my-2 px-8">{{dialogModule.body}}</v-card-text>
 			<v-card-actions>
 				<div class="flex-grow-1"></div>
-				<v-btn color="primary" tile text @click="dialog = false">{{ lang.cancel }}</v-btn>
-				<v-btn tile text @click="acceptClick()">{{ lang.accept }}</v-btn>
+				<v-btn color="secondary" tile @click="dialog = false">{{ lang.cancel }}</v-btn>
+				<v-btn color="primary" tile @click="acceptClick()">{{ lang.accept }}</v-btn>
 			</v-card-actions>
 		</v-card>
 	</v-dialog>

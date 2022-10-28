@@ -12,5 +12,8 @@ export default {
     delete: "Eliminar",
     create: "Crear",
     save: "Guardar",
+    home: "Inicio",
+    about: "Acerca",
+    search: "Buscar",
 
 }

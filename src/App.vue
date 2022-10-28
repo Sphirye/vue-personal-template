@@ -1,32 +1,40 @@
 <template>
   <v-app>
-
-		<HeaderComponent/>
-
+    <HeaderComponent/>
+    <DrawerComponent/>
     <v-main>
-			<router-view/>
-		</v-main>
-
-		<SnackbarComponent/>
-		<DialogComponent/>
-		<FooterComponent/>
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
+    </v-main>
+    <SnackbarComponent/>
+    <DialogComponent/>
+    <FooterComponent/>
   </v-app>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
-import SnackbarComponent from "@/components/SnackbarComponent.vue"
-import HeaderComponent from "@/components/HeaderComponent.vue"
-import FooterComponent from "@/components/FooterComponent.vue"
-import DialogComponent from "@/components/DialogComponent.vue"
-import ConstantTool from "@/service/tool/ConstantTool";
+import SnackbarComponent from "@/components/ui/SnackbarComponent.vue"
+import HeaderComponent from "@/components/ui/HeaderComponent.vue"
+import FooterComponent from "@/components/ui/FooterComponent.vue"
+import DialogComponent from "@/components/ui/DialogComponent.vue"
+import DrawerComponent from "@/components/ui/DrawerComponent.vue";
 
-@Component({ components: { DialogComponent, SnackbarComponent, HeaderComponent, FooterComponent } })
+@Component({ components: { DialogComponent, SnackbarComponent, HeaderComponent, FooterComponent, DrawerComponent } })
 export default class App extends Vue {
 
-  created() {
-    console.log(process.env)
-  }
 
 }
 </script>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+</style>

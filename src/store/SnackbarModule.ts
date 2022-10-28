@@ -1,5 +1,5 @@
-import {Module, Mutation, VuexModule} from "vuex-module-decorators";
-import store from "@/store/index";
+import {Module, Mutation, VuexModule} from "vuex-module-decorators"
+import store from "@/store/index"
 
 @Module({dynamic: true, store, name: "SnackbarModule"})
 export default class SnackbarModule extends VuexModule {
