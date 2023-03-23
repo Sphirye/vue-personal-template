@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawer" clipped app :mobile-breakpoint="0">
+  <v-navigation-drawer v-model="drawer" color="grey lighten-3" clipped app :mobile-breakpoint="0">
     <v-list class="my-0 py-0">
       <v-list-item-group>
         <template v-for="(button,index) in buttons">
@@ -10,7 +10,6 @@
         </template>
       </v-list-item-group>
     </v-list>
-
   </v-navigation-drawer>
 </template>
 

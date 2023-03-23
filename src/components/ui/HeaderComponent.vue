@@ -1,5 +1,5 @@
 <template>
-	<v-app-bar color="primary" dark clipped-left app flat>
+	<v-app-bar color="grey darken-4" dark app clipped-left flat>
     <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
 		<div class="d-flex align-center pointer" @click="$router.push('/').catch(err => {})">
 			<v-img alt="Vuetify Logo" class="shrink mr-2" contain src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" transition="scale-transition" width="40"/>

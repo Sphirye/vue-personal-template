@@ -1,5 +1,5 @@
 import { Action, Module, Mutation, VuexModule } from "vuex-module-decorators"
-import Language, { LanguageType } from "@/model/Language"
+import Language, { LanguageType } from "@/model/vue/Language"
 import store from "@/store/index"
 import spanish from "@/lang/spanish"
 

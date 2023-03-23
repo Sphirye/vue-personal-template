@@ -1,5 +1,5 @@
 <template>
-	<v-footer color="primary lighten-1">
+	<v-footer color="orange">
 		<v-row justify="center" no-gutters>
 			<v-btn color="white" text rounded class="my-2">Button</v-btn>
 			<v-btn color="white" text rounded class="my-2">Button</v-btn>
@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator"
+import { Component, Vue } from "vue-property-decorator"
 
 @Component
 export default class FooterComponent extends Vue {

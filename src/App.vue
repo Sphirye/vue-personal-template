@@ -2,7 +2,7 @@
   <v-app>
     <HeaderComponent/>
     <DrawerComponent/>
-    <v-main>
+    <v-main class="grey lighten-3">
       <transition name="fade" mode="out-in">
         <router-view/>
       </transition>
