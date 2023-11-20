@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes: Array<RouteConfig> = [
   { path: '/', name: 'Home', component: () => import('../views/HomeView.vue') },
   { path: '/about', name: 'About', component: () => import('../views/AboutView.vue') },
-
+  { path: '*', redirect: '/' }
 ]
 
 const router = new VueRouter({
